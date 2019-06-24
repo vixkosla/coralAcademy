@@ -4,8 +4,13 @@ body {
   color: #454545;
 }
 
-/* header */
+.container {
+  padding: 32px 0 32px 24px;
+}
 
+/* check global dimensions with persentage value */
+/* replace dimensions with the em/rem sizes */
+/* header */
 
 nav {
   height: 64px;
@@ -45,4 +50,60 @@ nav span {
 
 nav img {
   vertical-align: middle;
+}
+
+/* Jumbotron  */
+
+.jumbotron {
+  background-color: lightgrey;
+  display: flex;
+}
+
+.image-container-rectangle {
+  width: 60%;
+}
+
+.image-container-rectangle img {
+  width: 100%;
+}
+
+.jumbotron-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.jumbotron-info h1 {
+  font-size: 48px;
+  font-style: bold;
+}
+
+.jumbotron-info p {
+  font-size: 24px;
+}
+
+.button {
+  height: 50px;
+  background-color: #454545;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .jumbotron-info h1 {
+    font-size: 32px;
+  }
+
+  .jumbotron-info p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  /* mobile layot */
+
 }
