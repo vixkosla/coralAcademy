@@ -2,6 +2,7 @@ body {
   background-color: white;
   margin: 0;
   color: #454545;
+  font-family: 'Helvetica';
 }
 
 .container {
@@ -35,8 +36,7 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
-  font-weight: bold;
+  color: blue;
 }
 
 nav p {
@@ -104,6 +104,103 @@ nav img {
 
 @media only screen and (max-width: 650px) {
 
+}
+
   /* mobile layot */
 
+
+/*  Main  */
+
+.main {
+  display: flex;
+}
+
+.banner-column {
+  width: 60%;
+  padding-right: 24px;
+}
+
+.banner-column img {
+  width: 100%;
+}
+
+.info-column {
+  width: 40%;
+  border-left: 1px solid lightgrey;
+}
+
+.item {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+.item img {
+  width: 35%;
+  height: 35%;
+}
+
+.item-description {
+  width: 65%;
+  padding-left: 16px;
+}
+
+
+/* courses */
+
+.courses {
+  padding: 32px 72px;
+  background-color: lightgrey;
+}
+
+.courses h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.courses-table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 30%;
+  background-color: white;
+  margin-top: 32px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-info {
+  padding: 16px 16px 24px 16px;
+}
+
+/* exhibit */
+
+.thesis {
+  display: flex;
+}
+
+.banner-column video {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  height: 72px;
+  font-size: 12px;
+  border-top: 1px solid lightgrey;
+  padding: 16px 24px 0 24px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
