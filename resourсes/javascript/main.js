@@ -1,3 +1,5 @@
+// add elements to the web-site via handlebars.js
+
 var content = {
   items : [
     {
@@ -58,3 +60,20 @@ var templateCourse = Handlebars.compile(course);
 
 document.getElementById('info-column').innerHTML = templateItem(content);
 document.getElementById('courses-table').innerHTML = templateCourse(content);
+
+// replace rectangle images to square (think very low quelity solution)
+
+window.onresize = responvsiveDesigne;
+
+function responvsiveDesigne () {
+  let width = document.getElementById("main-container").clientWidth;
+  if ( width === 550 || width < 550 ) {
+    document.querySelector('#info-column').children[0].firstElementChild.src = "resourсes/images/information-orientation-mobile.jpg";
+    document.querySelector('#info-column').children[1].firstElementChild.src = "resourсes/images/information-campus-mobile.jpg";
+    document.querySelector('#info-column').children[2].firstElementChild.src = "resourсes/images/information-guest-lecture-mobile.jpg";
+  } else {
+    document.querySelector('#info-column').children[0].firstElementChild.src = "resourсes/images/information-orientation.jpg";
+    document.querySelector('#info-column').children[1].firstElementChild.src = "resourсes/images/information-campus.jpg";
+    document.querySelector('#info-column').children[2].firstElementChild.src = "resourсes/images/information-guest-lecture.jpg";
+  }
+}

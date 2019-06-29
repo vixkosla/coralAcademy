@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="resourсes/css/style.css">
+
+    <script src="resourсes/javascript/handlebars-v4.1.2.js"></script>
+
+    <script id="template-item" type="text/x-handlebars-template.js">
+    {{#each items}}
+      <section class="item">
+        <img src="{{this.image}}" alt="">
+        <div class="item-description">
+          <h4>{{this.name}}</h4>
+          <p>{{this.description}}</p>
+          <a href="#">Read more</a>
+        </div>
+      </section>
+    {{/each}}
+    </script>
+
+    <script id="template-course" type="text/x-handlebars-template.js">
+      {{#each courses}}
+      <section class="course">
+        <img src="{{this.image}}" alt="">
+        <div class="course-info">
+          <h4>{{this.name}}</h4>
+          <span>COURSES</span>
+          <p>{{description}}</p>
+        </div>
+      </section>
+      {{/each}}
+    </script>
+
+  </head>
+  <body>
+
+    <nav class="desktop">
+
+      <div class="logo">
+        <img src="resourсes/images/ic-logo.svg" alt="Colmar Academy">
+        <p><span>COLMAR</span>ACADEMY</p>
+      </div>
+
+      <ul>
+        <li><a href="#" class="navigation">On campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">Sign in</a></li>
+      </ul>
+
+    </nav>
+
+    <nav class="mobile">
+      <a href="#"><img src="resourсes/images/ic-logo.svg" alt=""></a>
+      <a href="#"><img src="resourсes/images/ic-online.svg" alt=""></a>
+      <a href="#"><img src="resourсes/images/ic-on-campus.svg" alt=""></a>
+      <a href="#"><img src="resourсes/images/ic-login.svg" alt=""></a>
+    </nav>
+
+
+    <header class="jumbotron container">
+         <img src="resourсes/images/banner.jpg" alt="students at the break">
+       <div class="jumbotron-info">
+         <h1>Learn something new everyday</h1>
+         <p>Lrem ipsum dolor sit amet, consectetur adipiscong elit.</p>
+         <div class="button">Start here</div>
+       </div>
+    </header>
+
+    <article class="main container" id="main-container">
+
+      <div class="banner-column">
+        <img src="resourсes/images/information-main.jpg" alt="Emanuel, Sr Strategist at Hiring.com">
+        <h2>it's doesn't hurt to keep rpacticing</h2>
+        <p>"Curabitur vitae livero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique, trisqie ligula."</p>
+        <span>emanuel, Sr Strategist at Hiring.com</span>
+      </div>
+
+      <div class="info-column" id="info-column">
+        <!-- template handlebars zone -->
+      </div>
+
+    </article>
+
+    <article class="courses">
+      <h3>Start learning</h3>
+      <div class="courses-table" id="courses-table">
+        <!-- template handlebars zone -->
+      </div>
+      <div class="courses-table-moble">
+        <ul>
+          <li>Software engineering</li>
+          <li>Computer art</li>
+          <li>Design</li>
+          <li>Data</li>
+          <li>Business</li>
+          <li>Marketing</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="thesis container">
+
+      <div class="banner-column">
+        <video src="resourсes/videos/thesis.mp4" alt=""></video>
+        <h5>Reimagine urban</h5>
+        <p>"Curabitur vitae livero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique, trisqie ligula."</p>
+      </div>
+
+      <div class="info-column">
+
+        <section class="item">
+          <img src="resourсes/images/thesis-fisma.jpg" alt="">
+          <div class="item-description">
+            <h4>Fisma: Design and Prototype</h4>
+            <p>Designer showcase of new prototype product</p>
+          </div>
+        </section>
+
+        <section class="item">
+          <img src="resourсes/images/thesis-now-and-then.jpg" alt="">
+          <div class="item-description">
+            <h4>Now and then</h4>
+            <p>Reserch stydu, about New York</p>
+          </div>
+        </section>
+
+      </div>
+
+    </article>
+
+    <footer>
+      <span class="left">(c) 2016 Colmar Academy. All rights reserved.</span>
+      <span class="right">Terms Privacy</span>
+    </footer>
+
+  <script src="resourсes/javascript/main.js" type="text/javascript"></script>
+  </body>
+</html>
