@@ -19,10 +19,30 @@ body {
   padding-left: 24px;
 }
 
+
+
 .info-column {
   width: 40%;
   border-left: 1px solid lightgrey;
 }
+
+@media only screen and (max-width: 1000px) {
+  .banner-column {
+    width: 50%;
+  }
+
+  .info-column {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .banner-column {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 
 /* check global dimensions with persentage value */
 /* replace dimensions with the em/rem sizes */
@@ -205,14 +225,6 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  .banner-column {
-    width: 50%;
-  }
-
-  .info-column {
-    width: 50%;
-  }
-
   .item {
     padding: 8px 0;
   }
@@ -225,11 +237,6 @@ body {
 @media only screen and (max-width: 750px) {
   .item {
     font-size: 14px;
-  }
-
-  .banner-column {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 
   .banner-column p {
@@ -382,7 +389,19 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
-  .thises.info-column {
+  .thesis.info-column {
+    display: none;
+  }
+
+  .thesis.banner-column {
+    width: 100%;
+  }
+
+  .thesis.banner-column h5 {
+    display: none;
+  }
+
+  .thesis.banner-column p {
     display: none;
   }
 }
